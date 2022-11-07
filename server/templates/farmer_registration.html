@@ -1,0 +1,284 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>AGRO FARMERS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by gettemplates.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	
+	<!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/animate.css')}}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/icomoon.css')}}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.css')}}">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/flexslider.css')}}">
+
+	
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/owl.theme.default.min.css')}}">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+
+	<!-- Modernizr JS -->
+	<script src="{{url_for('static',filename='js/modernizr-2.6.2.min.js')}}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="{{url_for('static',filename='js/respond.min.js')}}"></script>
+	<![endif]-->
+
+	<script>
+		function matchPassword(){
+			var pw1=document.getElementById("password").value;
+			var pw2=document.getElementById("cpass").value;
+			if(pw1!=pw2){
+				alert("Password did not Match");
+				
+			}
+			else{
+				alert("Password matched")
+			}
+		}
+	</script>
+
+	</head>
+	<body>
+		
+	
+		<div class="fh5co-loader"></div>
+	
+		<div id="page">
+		<nav class="fh5co-nav" role="navigation">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
+						
+					<ul>	
+							
+							
+						
+							<li><a href="/">BACK TO HOME PAGE</a></li>
+						</ul>
+					</div>
+					
+					</div>
+				</div>
+				
+			</div>
+		</nav>
+	
+
+	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(static/images/img_bg_2.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<h1>FARMER REGISTRATION</h1>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div id="fh5co-contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-md-push-1 animate-box">
+					
+					<div class="fh5co-contact-info">
+						
+					</div>
+
+				</div>
+				<div class="col-md-6 animate-box">
+					<h3>FARMER REGISTRATION</h3>
+					<form action="farmer_registration" method="POST">
+						<div class="row form-group">
+							<div class="col-md-6">
+								<!-- <label for="fname">First Name</label> -->
+								<input type="text" id="fname" name="fname" class="form-control" placeholder="Firstname" pattern="[A-Za-z]+" required>
+							</div>
+							<div class="col-md-6">
+								<!-- <label for="lname">Last Name</label> -->
+								<input type="text" id="lname" name="lname" class="form-control" placeholder="Lastname" pattern="[A-Za-z]+">
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="email">Email</label> -->
+								<input type="text" id="email" name="email" class="form-control" placeholder="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="email">Email</label> -->
+								<input type="text" id="cnum" name="cnum" class="form-control" placeholder="Contact number" pattern="[6789][0-9]{9}" required>
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="message">Message</label> -->
+								<textarea name="adrs" id="adrs" cols="20" rows="5" class="form-control" placeholder="Address" required></textarea>
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<input type="radio" id="male" name="gender" value="male">
+									<label for="male">Male</label><br>
+								<input type="radio" id="female" name="gender" value="female">
+									<label for="female">Female</label><br>
+								<input type="radio" id="other" name="gender" value="other">
+									<label for="other">Other</label>
+							</div>
+						</div>
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="email">Email</label> -->
+								<input type="text" id="panchayath" name="panchayath" class="form-control" placeholder="Panchayath" pattern="[A-Za-z]+" required>
+							</div>
+						</div>
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="email">Email</label> -->
+								<input type="text" id="ward_no" name="ward_no" class="form-control" placeholder="Ward Number">
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="email">Email</label> -->
+								<input type="text" id="mob_no" name="mob_no" class="form-control" placeholder="Mobile Number" pattern="[6789][0-9]{9}">
+							</div>
+						</div>
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="email">Email</label> -->
+								<input type="text" id="street_name" name="street_name" class="form-control" placeholder="Street Name" required>
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="email">Email</label> -->
+								<input type="text" id="house_no" name="house_no" class="form-control" placeholder="House Number" required>
+							</div>
+						</div>
+
+
+
+                        <div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="email">Email</label> -->
+								<input type="text" id="username" name="username" class="form-control" placeholder="Username" required>
+							</div>
+						</div>
+
+                        <div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="email">Email</label> -->
+								<input type="text" id="password" name="password" class="form-control" placeholder="Password" value="" required>
+							</div>
+						</div>
+
+                        <div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="email">Email</label> -->
+								<input type="text" id="cpass" name="cpass" class="form-control" placeholder="Confirm password" value="" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<input type="submit" onclick="matchPassword()" value="SUBMIT" class="btn btn-primary">
+						</div>
+
+					</form>		
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<!-- <div id="map" class="animate-box" data-animate-effect="fadeIn"></div> -->
+
+	<div id="fh5co-started">
+		<div class="container">
+			<div class="row animate-box">
+				
+			</div>
+		
+		</div>
+	</div>
+
+	
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+	<!-- jQuery Easing -->
+	<script src="{{url_for('static',filename='js/jquery.easing.1.3.js')}}"></script>
+	<!-- Bootstrap -->
+	<script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+	<!-- Waypoints -->
+	<script src="{{url_for('static',filename='js/jquery.waypoints.min.js')}}"></script>
+	<!-- Carousel -->
+	<script src="{{url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+	<!-- countTo -->
+	<script src="{{url_for('static',filename='js/jquery.countTo.js')}}"></script>
+	<!-- Flexslider -->
+	<script src="{{url_for('static',filename='js/jquery.flexslider-min.js')}}"></script>
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script src="{{url_for('static',filename='js/google_map.js')}}"></script>
+
+	<!-- Main -->
+	<script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+	</body>
+</html>
+
